@@ -737,7 +737,7 @@
         
         <!-- Section styles -->
         <link rel="stylesheet" href="css/section-text-image-block.css" type="text/css">
-        
+
         <div class="container">
           <div class="container-content">
             <div class="text-image-block is-grid is-aligned-center">
@@ -1611,12 +1611,12 @@
         <div class="site-center site-center--compact site-side-spacing">
           <div class="is-grid has-no-row-gap footer__blocks">
             <div class="is-col-12 is-col-9-lg footer-block footer-block--menu">
-              <div class="collapsible">
+              <collapsible-footer class="collapsible">
                 <ul class="footer-block--menu__list footer-block--menu__list level-1">
-                  <li class="footer-block--menu__item level-1">
-                    <div class="footer-block--menu__link level-1 focus-inset">
+                  <li class="footer-block--menu__item level-1 collapsable-list" data-open="true">
+                    <button class="footer-block--menu__link level-1 focus-inset">
                       <span>About</span>
-                    </div>
+                    </button>
                     <ul class="footer-block--menu__list level-2 motion-reduce" tabindex="-1">
                       <li class="footer-block--menu__item level-2">
                         <a href="#" class="footer-block--menu__link level-2 focus-inset">Journal</a>
@@ -1638,10 +1638,10 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="footer-block--menu__item level-1">
-                    <div class="footer-block--menu__link level-1 focus-inset">
+                  <li class="footer-block--menu__item level-1 collapsable-list" data-open="true">
+                    <button class="footer-block--menu__link level-1 focus-inset">
                       <span>Info</span>
-                    </div>
+                    </button>
                     <ul class="footer-block--menu__list level-2 motion-reduce" tabindex="-1">
                       <li class="footer-block--menu__item level-2">
                         <a href="#" class="footer-block--menu__link level-2 focus-inset">Business</a>
@@ -1663,10 +1663,10 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="footer-block--menu__item level-1">
-                    <div class="footer-block--menu__link level-1 focus-inset">
+                  <li class="footer-block--menu__item level-1 collapsable-list" data-open="true">
+                    <button class="footer-block--menu__link level-1 focus-inset">
                       <span>Products</span>
-                    </div>
+                    </button>
                     <ul class="footer-block--menu__list level-2 motion-reduce" tabindex="-1">
                       <li class="footer-block--menu__item level-2">
                         <a href="#" class="footer-block--menu__link level-2 focus-inset">Ploov - Heating cushions</a>
@@ -1689,7 +1689,7 @@
                     </ul>
                   </li>
                 </ul>
-              </div>
+              </collapsible-footer>
             </div>
             <div class="is-col-12 is-col-3-lg footer-block footer-block--newsletter">
               <p class="h4 footer-block__title">Newsletter</p>
