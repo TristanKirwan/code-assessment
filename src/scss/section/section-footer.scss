@@ -225,6 +225,14 @@
           }
         }
       }
+      &[data-open="false"] {
+        @include mqmax($bp-md){
+          .level-2 {
+            max-height: 0px;
+            overflow: hidden;
+          }
+        }
+      }
     }
     &__link {
       display: block;
@@ -240,6 +248,8 @@
         font-size: rem(26);
         line-height: rem(31);
         letter-spacing: rem(0.5);
+        background: transparent;
+        border: none;
         @include mqmin($bp-md) {
           font-size: rem(32);
           line-height: rem(42);
