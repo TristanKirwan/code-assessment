@@ -133,6 +133,8 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: rem(32);
+    background: transparent;
+    border: none;
     @include mqmin($bp-lg) {
       bottom: rem(50);
     }
