@@ -25,9 +25,9 @@
   &__content-wrapper {
     box-sizing: border-box;
     // padding left/right given to avoid overlap with the "swiper navigation arrows"
-    padding-block: rem(80) rem(100);
+    padding-block: 0 rem(100);
     @include mqmin($bp-md) {
-      padding-block: rem(80) rem(102);
+      padding-block: 0 rem(102);
       max-width: var(--site-center-narrow);
     }
     &.has-navigation {
@@ -133,8 +133,6 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: rem(32);
-    background: transparent;
-    border: none;
     @include mqmin($bp-lg) {
       bottom: rem(50);
     }

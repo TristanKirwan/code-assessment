@@ -72,12 +72,7 @@
       constructor() {
         super();
         this.swiper = this.querySelector('[data-swiper]');
-        this.scrollIndicators = this.querySelectorAll('.swiper-scroll-indicators') || [];
-
-        this.scrollIndicators.forEach((indicator) => {
-          indicator.addEventListener('click', () => this.scrollPastSlider());
-        });
-
+        
         // Stop when the swiper is not found
         if(!this.swiper) {
           return;
@@ -140,12 +135,6 @@
         
       }
       
-      scrollPastSlider() {
-        const boundingRect = this.swiper.getBoundingClientRect();
-        const sliderEnd = boundingRect.bottom - boundingRect.top;
-        window.scrollTo({ top: sliderEnd, behavior: 'smooth' });
-      }
-
       /**
       * Handles the theme editor block change/edit event
       * @param {Object} event

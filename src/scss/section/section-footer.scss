@@ -138,21 +138,10 @@
       width: rem(20);
       height: rem(20);
       padding: 0;
-      @include mqmax($bp-md) {
-        width: rem(24);
-        height: rem(24);
-      }
       .icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: rem(32);
+        height: rem(32);
         margin: 0;
-        width: rem(16);
-        height: rem(16);
-        @include mqmax($bp-md) {
-          width: rem(20);
-          height: rem(20);
-      }
       }
     }
     .field__input {
@@ -225,14 +214,6 @@
           }
         }
       }
-      &[data-open="false"] {
-        @include mqmax($bp-md){
-          .level-2 {
-            max-height: 0px;
-            overflow: hidden;
-          }
-        }
-      }
     }
     &__link {
       display: block;
@@ -248,8 +229,6 @@
         font-size: rem(26);
         line-height: rem(31);
         letter-spacing: rem(0.5);
-        background: transparent;
-        border: none;
         @include mqmin($bp-md) {
           font-size: rem(32);
           line-height: rem(42);
