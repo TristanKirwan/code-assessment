@@ -17,6 +17,10 @@
       padding-inline: var(--site-side-spacing-xxl);
     }
   }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
   &__title {
     margin-bottom: 0;
     @include mqmax($bp-md) {
@@ -29,7 +33,7 @@
   &__icon {
     display: inline-flex;
     padding: rem(10);
-    margin: 0 auto calc(var(--element-spacing) * 3) auto;
+    margin: auto auto 0 auto;
     transform: scale(1);
     transition: transform var(--duration-default) ease-in-out;
     @include mqmin($bp-xl) {
